@@ -8,6 +8,15 @@
   },
   "homepage": "https://fylgja.dev/",
   "repository": "https://github.com/fylgja/skills",
+  "documentationUrl": "https://fylgja.dev/docs/integrations/ai-support/",
+  "supportUrl": "https://github.com/fylgja/skills/issues",
+  "privacyPolicyUrl": "https://fylgja.dev/privacy/",
   "license": "MIT",
-  "keywords": ["fylgja", "css", "html", "design-tokens", "accessibility"]
+  "keywords": [
+    "fylgja",
+    "css",
+    "html",
+    "design-tokens",
+    "accessibility"
+  ]
 }
