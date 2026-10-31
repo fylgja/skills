@@ -2,7 +2,8 @@
 
 [![Fylgja](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Ffylgja%2F.github%2Frefs%2Fheads%2Fmain%2Fassets%2Fbadge%2Fv1.0.0.json)](https://fylgja.dev/)
 [![CI](https://img.shields.io/github/actions/workflow/status/fylgja/skills/test.yml?color=%230969da&label=&branch=main&logo=github&labelColor=%232b1c2c)](https://github.com/fylgja/skills/actions)
-[![Version](https://img.shields.io/github/package-json/v/fylgja/skills?filename=.claude-plugin%2Fplugin.json&color=%230969da&label=&labelColor=%232b1c2c)](https://github.com/fylgja/skills/blob/main/.claude-plugin/plugin.json)
+[![Version](https://img.shields.io/github/package-json/v/fylgja/skills?filename=.claude-plugin%2Fplugin.json&color=%230969da&label=version&labelColor=%232b1c2c)](https://github.com/fylgja/skills/blob/main/.claude-plugin/plugin.json)
+[![Claude Code plugin](https://img.shields.io/badge/plugin-Claude_Code-d97757?logo=claude&logoColor=white&labelColor=%232b1c2c)](#claude-code)
 [![License](https://img.shields.io/github/license/fylgja/skills?color=%23ffb900&labelColor=%232b1c2c)](https://github.com/fylgja/skills/blob/main/LICENSE)
 
 Agent skills for building UI with [Fylgja CSS](https://fylgja.dev/), a modular CSS library built around plain HTML. They teach your AI assistant how Fylgja is put together, so it reaches for native elements, design tokens, and dynamic utilities instead of inventing classes.
