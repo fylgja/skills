@@ -17,6 +17,8 @@
     "css",
     "html",
     "design-tokens",
-    "accessibility"
+    "accessibility",
+    "class-less",
+    "ui-components"
   ]
 }
