@@ -39,7 +39,7 @@ rm -rf .fylgja-skills
 
 ## Contributing
 
-The skills describe the published packages. Run `npm install`, then `npm test` checks that every CSS variable and `@fylgja/*` path in a skill exists in those packages. There is no lockfile on purpose, so the weekly check also catches a new release that breaks a skill.
+The skills describe the published packages. Run `npm install`, then `npm test` checks that every CSS variable and `@fylgja/*` path in a skill exists in those packages. Dependabot opens a pull request for each new `@fylgja` release, so CI shows if it breaks a skill.
 
 When you change a skill, raise `version` in `.claude-plugin/plugin.json`.
 

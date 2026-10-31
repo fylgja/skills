@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    versioning-strategy: increase
+    cooldown:
+      default-days: 1
+    groups:
+      fylgja:
+        patterns:
+          - "@fylgja/*"
