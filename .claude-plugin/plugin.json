@@ -1,0 +1,13 @@
+{
+  "name": "fylgja",
+  "version": "1.0.0",
+  "description": "Build UI with Fylgja CSS: native HTML, design tokens, and dynamic utilities, plus accordions, menus, modals, and offcanvas panels without div soup.",
+  "author": {
+    "name": "Fylgja",
+    "url": "https://fylgja.dev/"
+  },
+  "homepage": "https://fylgja.dev/",
+  "repository": "https://github.com/fylgja/skills",
+  "license": "MIT",
+  "keywords": ["fylgja", "css", "html", "design-tokens", "accessibility"]
+}

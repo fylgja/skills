@@ -1,0 +1,15 @@
+{
+  "name": "fylgja",
+  "description": "Skills for building UI with Fylgja CSS",
+  "owner": {
+    "name": "Fylgja",
+    "url": "https://fylgja.dev/"
+  },
+  "plugins": [
+    {
+      "name": "fylgja",
+      "description": "Build UI with Fylgja CSS: native HTML, design tokens, and dynamic utilities.",
+      "source": "./"
+    }
+  ]
+}

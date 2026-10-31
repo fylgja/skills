@@ -1,0 +1,23 @@
+{
+  "name": "fylgja-skills",
+  "private": true,
+  "description": "Skills for building UI with Fylgja CSS",
+  "homepage": "https://fylgja.dev/",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node .github/scripts/check-skills.js"
+  },
+  "devDependencies": {
+    "@fylgja/badge": "^2.1.0",
+    "@fylgja/base": "^2.2.0",
+    "@fylgja/breadcrumbs": "^2.1.0",
+    "@fylgja/callout": "^1.0.2",
+    "@fylgja/card": "^2.0.3",
+    "@fylgja/form-extend": "^1.1.1",
+    "@fylgja/input-group": "^2.0.1",
+    "@fylgja/toast": "^1.0.1",
+    "@fylgja/tokens": "^2.3.0",
+    "@fylgja/utilities": "^2.2.0"
+  }
+}
