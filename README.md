@@ -26,7 +26,9 @@ Copy a skill folder into your project. The `fylgja-css` skill has reference file
 ```bash
 # Replace .agents with your AI agent folder, e.g. .claude, .cursor, .github or .codex
 mkdir -p .agents/skills
-curl -L https://codeload.github.com/fylgja/skills/tar.gz/main | tar -xz -C .agents/skills --strip-components=2 skills-main/skills/fylgja-css
+git clone --depth 1 https://github.com/fylgja/skills .fylgja-skills
+cp -R .fylgja-skills/skills/fylgja-css .agents/skills/
+rm -rf .fylgja-skills
 ```
 
 ## Contributing
