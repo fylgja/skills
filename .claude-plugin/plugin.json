@@ -19,6 +19,7 @@
     "design-tokens",
     "accessibility",
     "class-less",
-    "ui-components"
+    "ui-components",
+    "utilities"
   ]
 }
