@@ -1,5 +1,6 @@
 {
   "name": "fylgja",
+  "displayName": "Fylgja CSS",
   "version": "1.0.0",
   "description": "Build UI with Fylgja CSS: native HTML, design tokens, and dynamic utilities, plus accordions, menus, modals, and offcanvas panels without div soup.",
   "author": {
