@@ -15,3 +15,31 @@ jobs:
           node-version: 24
       - run: npm install
       - run: npm test
+
+  release:
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      # The directory refuses scripts and package config, so it tracks a
+      # branch holding only the plugin files
+      - name: Sync plugin branch
+        env:
+          GIT_INDEX_FILE: ${{ runner.temp }}/plugin-index
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          git fetch origin plugin:refs/remotes/origin/plugin || true
+          git add -- .claude-plugin skills README.md LICENSE .gitignore
+          tree=$(git write-tree)
+          parent=$(git rev-parse -q --verify origin/plugin || true)
+          if [ -n "$parent" ] && [ "$(git rev-parse "$parent^{tree}")" = "$tree" ]; then
+            exit 0
+          fi
+          commit=$(git commit-tree "$tree" ${parent:+-p "$parent"} -m "$(git log -1 --format=%B)")
+          git push origin "$commit:refs/heads/plugin"
